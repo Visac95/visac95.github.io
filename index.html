@@ -1,98 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Software Developer</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Desarrollo Móvil y Flutter">
+    <title>Tu Nombre | Desarrollador Flutter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header class="navbar">
-    <div class="container nav-content">
-      <div class="logo">YourName</div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero">
-    <div class="container hero-content">
-      <h1>Software Developer</h1>
-      <p class="subtitle">
-        I build practical, scalable and user-focused applications.
-      </p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="https://github.com/YOUR_GITHUB" target="_blank" class="btn secondary">GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I am a software developer focused on building clean, efficient and
-        scalable applications. I enjoy solving real-world problems through
-        well-structured code and thoughtful system design.
-      </p>
-      <p>
-        My main interests include backend development, architecture,
-        and building products that deliver measurable value.
-      </p>
-    </div>
-  </section>
-
-  <section id="projects" class="section alt">
-    <div class="container">
-      <h2>Projects</h2>
-
-      <div class="project-card">
-        <div class="project-info">
-          <h3>MoneyMove</h3>
-          <p>
-            A personal finance management application designed to help users
-            track expenses, manage income, and gain financial insights through
-            structured data visualization and intuitive UI.
-          </p>
-          <ul class="tech-list">
-            <li>Flutter</li>
-            <li>Firebase</li>
-            <li>REST APIs</li>
-          </ul>
-          <div class="project-links">
-            <a href="https://moneymove.visacstudio.online" target="_blank">Live Demo</a>
-            <a href="https://github.com/YOUR_REPO" target="_blank">Repository</a>
-          </div>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">TN.</div> <ul class="nav-links">
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#contacto" class="btn-primary">Contáctame</a></li>
+            </ul>
         </div>
-      </div>
+    </nav>
 
-      <!-- Puedes duplicar esta tarjeta para más proyectos -->
+    <header class="hero">
+        <div class="container">
+            <span class="greeting">Hola, soy Tu Nombre</span>
+            <h1>Construyo aplicaciones móviles <br> que solucionan problemas reales.</h1>
+            <p class="subtitle">
+                Desarrollador Flutter enfocado en código limpio, arquitectura escalable y experiencias de usuario fluidas.
+            </p>
+            <div class="hero-btns">
+                <a href="#proyectos" class="btn-primary">Ver mi trabajo</a>
+                <a href="https://github.com/Visac95" target="_blank" class="btn-secondary">Mi GitHub</a>
+            </div>
+        </div>
+    </header>
 
-    </div>
-  </section>
+    <section id="proyectos" class="section">
+        <div class="container">
+            <h2 class="section-title">Proyecto Destacado</h2>
+            
+            <article class="project-card">
+                <div class="project-image">
+                    <div class="placeholder-img">
+                        <span>Captura de MoneyMove</span>
+                    </div>
+                    </div>
+                
+                <div class="project-content">
+                    <h3 class="project-title">MoneyMove</h3>
+                    <p class="project-description">
+                        Una solución integral de gestión financiera personal desarrollada desde cero. 
+                        Permite a los usuarios rastrear ingresos, gastos y metas de ahorro con una interfaz minimalista e intuitiva.
+                        Implementa autenticación segura y sincronización en tiempo real.
+                    </p>
+                    
+                    <div class="tech-stack">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Dart</span>
+                        <span class="tech-tag">Firebase Auth</span>
+                        <span class="tech-tag">Cloud Firestore</span>
+                        <span class="tech-tag">State Management</span>
+                    </div>
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>If you would like to collaborate or discuss opportunities, feel free to reach out.</p>
-      <div class="contact-links">
-        <a href="mailto:your@email.com">Email</a>
-        <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">LinkedIn</a>
-        <a href="https://github.com/YOUR_GITHUB" target="_blank">GitHub</a>
-      </div>
-    </div>
-  </section>
+                    <div class="project-links">
+                        <a href="https://github.com/Visac95/money_move" target="_blank" class="link-text">
+                            Ver Código Fuente &rarr;
+                        </a>
+                        </div>
+                </div>
+            </article>
+        </div>
+    </section>
 
-  <footer>
-    <div class="container">
-      <p>© 2026 Your Name. All rights reserved.</p>
-    </div>
-  </footer>
+    <section id="habilidades" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Stack Tecnológico</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Core</h3>
+                    <ul>
+                        <li>Flutter & Dart</li>
+                        <li>Desarrollo Android/iOS</li>
+                        <li>Programación Orientada a Objetos</li>
+                        <li>Estructuras de Datos</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend & Herramientas</h3>
+                    <ul>
+                        <li>Firebase (Auth, Firestore)</li>
+                        <li>Git & GitHub</li>
+                        <li>REST APIs</li>
+                        <li>Postman</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>UI/UX & Diseño</h3>
+                    <ul>
+                        <li>Diseño Responsivo</li>
+                        <li>Material Design 3</li>
+                        <li>Figma (Nociones)</li>
+                        <li>Accesibilidad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="section">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2 class="section-title">Sobre mí</h2>
+                <p>
+                    Soy un desarrollador apasionado por transformar ideas complejas en software utilizable. 
+                    Actualmente estoy enfocado en el ecosistema móvil con <strong>Flutter</strong>.
+                </p>
+                <p>
+                    Mi enfoque no es solo escribir código, sino entender el "por qué" detrás de cada funcionalidad. 
+                    En mi proyecto reciente, <em>MoneyMove</em>, me enfrenté a desafíos de seguridad y gestión de estado 
+                    que resolví implementando buenas prácticas de arquitectura.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section footer-cta">
+        <div class="container">
+            <h2>¿Listo para trabajar juntos?</h2>
+            <p>Estoy disponible para oportunidades laborales o proyectos freelance.</p>
+            <a href="mailto:tuemail@ejemplo.com" class="btn-primary">Envíame un correo</a>
+            
+            <div class="social-links">
+                <a href="https://github.com/Visac95" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/tu-usuario" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Tu Nombre. Construido con HTML, CSS y café.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
