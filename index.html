@@ -1,32 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Your Name - Software Developer</title>
   <meta charset="UTF-8">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
-      text-align: center;
-      padding: 50px;
-    }
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Software Developer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Samuel Ararat</h1>
-  <h2>Software Developer</h2>
-  <p>I build practical and scalable applications.</p>
 
-  <h3>Projects</h3>
-  <p><a href="https://youtu.be/8dEJ1r6tIDI">MoneyMove Demo</a></p>
-  <p><a href="https://github.com/Visac95/money_move">GitHub Repository</a></p>
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="logo">YourName</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <h3>Contact</h3>
-  <p><a href="https://linkedin.com/in/samuel-ararat-castro-4836193b1">LinkedIn</a></p>
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Software Developer</h1>
+      <p class="subtitle">
+        I build practical, scalable and user-focused applications.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="https://github.com/YOUR_GITHUB" target="_blank" class="btn secondary">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a software developer focused on building clean, efficient and
+        scalable applications. I enjoy solving real-world problems through
+        well-structured code and thoughtful system design.
+      </p>
+      <p>
+        My main interests include backend development, architecture,
+        and building products that deliver measurable value.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects" class="section alt">
+    <div class="container">
+      <h2>Projects</h2>
+
+      <div class="project-card">
+        <div class="project-info">
+          <h3>MoneyMove</h3>
+          <p>
+            A personal finance management application designed to help users
+            track expenses, manage income, and gain financial insights through
+            structured data visualization and intuitive UI.
+          </p>
+          <ul class="tech-list">
+            <li>Flutter</li>
+            <li>Firebase</li>
+            <li>REST APIs</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://moneymove.visacstudio.online" target="_blank">Live Demo</a>
+            <a href="https://github.com/YOUR_REPO" target="_blank">Repository</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Puedes duplicar esta tarjeta para más proyectos -->
+
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>If you would like to collaborate or discuss opportunities, feel free to reach out.</p>
+      <div class="contact-links">
+        <a href="mailto:your@email.com">Email</a>
+        <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">LinkedIn</a>
+        <a href="https://github.com/YOUR_GITHUB" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
