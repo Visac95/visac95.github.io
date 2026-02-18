@@ -1,148 +1,164 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio de Desarrollo Móvil y Flutter">
-    <title>Tu Nombre | Desarrollador Flutter</title>
+    <meta name="description" content="Samuel Ararat - Software Developer focused on mobile and full-stack development">
+    <title>Samuel Ararat | Software Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="container nav-content">
-            <div class="logo">TN.</div> <ul class="nav-links">
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#contacto" class="btn-primary">Contáctame</a></li>
+        <div class="container nav-container">
+            <a href="#" class="logo">Samuel<span>Ararat.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact" class="btn-nav">Contact Me</a></li>
             </ul>
         </div>
     </nav>
 
     <header class="hero">
-        <div class="container">
-            <span class="greeting">Hola, soy Tu Nombre</span>
-            <h1>Construyo aplicaciones móviles <br> que solucionan problemas reales.</h1>
-            <p class="subtitle">
-                Desarrollador Flutter enfocado en código limpio, arquitectura escalable y experiencias de usuario fluidas.
-            </p>
-            <div class="hero-btns">
-                <a href="#proyectos" class="btn-primary">Ver mi trabajo</a>
-                <a href="https://github.com/Visac95" target="_blank" class="btn-secondary">Mi GitHub</a>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="badge">👋 Hi, I'm Samuel Ararat</span>
+                <h1>Building scalable and logical <br> <span class="highlight">Software Solutions.</span></h1>
+                <p>
+                    Junior Software Developer focused on strong logic, clean structure, 
+                    and building reliable applications. Currently developing Android apps 
+                    with Flutter while expanding toward full-stack and cross-platform development.
+                </p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                    <a href="https://github.com/Visac95" target="_blank" class="btn-outline">GitHub Profile</a>
+                </div>
             </div>
         </div>
     </header>
 
-    <section id="proyectos" class="section">
+    <section id="projects" class="section bg-light">
         <div class="container">
-            <h2 class="section-title">Proyecto Destacado</h2>
-            
+            <div class="section-header">
+                <h2>Featured Project</h2>
+                <p>Currently in active development.</p>
+            </div>
+
             <article class="project-card">
-                <div class="project-image">
-                    <div class="placeholder-img">
-                        <span>Captura de MoneyMove</span>
-                    </div>
-                    </div>
+                <div class="card-image">
+                     <img src="assets/homeScreen.png" alt="MoneyMove App Screenshot" class="project-screenshot">
+                </div>
                 
-                <div class="project-content">
-                    <h3 class="project-title">MoneyMove</h3>
-                    <p class="project-description">
-                        Una solución integral de gestión financiera personal desarrollada desde cero. 
-                        Permite a los usuarios rastrear ingresos, gastos y metas de ahorro con una interfaz minimalista e intuitiva.
-                        Implementa autenticación segura y sincronización en tiempo real.
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>MoneyMove</h3>
+                        <span class="status-badge">In Development</span>
+                    </div>
+                    
+                    <p class="description">
+                        MoneyMove is a personal finance application built to help users 
+                        track expenses and manage their financial data efficiently. 
+                        The project focuses on structured state management, secure authentication, 
+                        and real-time cloud synchronization.
                     </p>
                     
+                    <ul class="key-features">
+                        <li>🔐 <strong>Authentication:</strong> Google Sign-In using Firebase Authentication.</li>
+                        <li>☁️ <strong>Cloud Sync:</strong> Real-time synchronization with Cloud Firestore, including offline persistence.</li>
+                        <li>🧠 <strong>State Management:</strong> Implemented using Provider for clean and maintainable architecture.</li>
+                        <li>🛡 <strong>Security Rules:</strong> Custom Firebase security rules to protect user data.</li>
+                    </ul>
+
                     <div class="tech-stack">
-                        <span class="tech-tag">Flutter</span>
-                        <span class="tech-tag">Dart</span>
-                        <span class="tech-tag">Firebase Auth</span>
-                        <span class="tech-tag">Cloud Firestore</span>
-                        <span class="tech-tag">State Management</span>
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>Firebase Auth</span>
+                        <span>Cloud Firestore</span>
+                        <span>Provider</span>
+                        <span>Git</span>
                     </div>
 
-                    <div class="project-links">
-                        <a href="https://github.com/Visac95/money_move" target="_blank" class="link-text">
-                            Ver Código Fuente &rarr;
-                        </a>
-                        </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/Visac95/money_move" target="_blank" class="btn-primary">View Code</a>
+                        <a href="https://youtu.be/8dEJ1r6tIDI?si=uTb2vlhSEJL7h10B" target="_blank" class="btn-primary">View Demo</a>
+                    </div>
+                        
+                    </div>
                 </div>
             </article>
         </div>
     </section>
 
-    <section id="habilidades" class="section bg-light">
+    <section id="skills" class="section">
         <div class="container">
-            <h2 class="section-title">Stack Tecnológico</h2>
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <p>Technologies and tools I actively use.</p>
+            </div>
+
             <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Core</h3>
+                <div class="skill-card">
+                    <div class="icon-box">📱</div>
+                    <h3>Mobile Development</h3>
                     <ul>
-                        <li>Flutter & Dart</li>
-                        <li>Desarrollo Android/iOS</li>
-                        <li>Programación Orientada a Objetos</li>
-                        <li>Estructuras de Datos</li>
+                        <li>Flutter Framework</li>
+                        <li>Dart</li>
+                        <li>Provider State Management</li>
+                        <li>Android App Development</li>
                     </ul>
                 </div>
-                <div class="skill-category">
-                    <h3>Backend & Herramientas</h3>
+
+                <div class="skill-card">
+                    <div class="icon-box">🔥</div>
+                    <h3>Backend & Cloud</h3>
                     <ul>
-                        <li>Firebase (Auth, Firestore)</li>
+                        <li>Firebase Authentication</li>
+                        <li>Cloud Firestore</li>
+                        <li>Firebase Security Rules</li>
+                        <li>REST API Integration</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="icon-box">🛠️</div>
+                    <h3>Web & Tools</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>HTML & CSS</li>
                         <li>Git & GitHub</li>
-                        <li>REST APIs</li>
-                        <li>Postman</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>UI/UX & Diseño</h3>
-                    <ul>
-                        <li>Diseño Responsivo</li>
-                        <li>Material Design 3</li>
-                        <li>Figma (Nociones)</li>
-                        <li>Accesibilidad</li>
+                        <li>Clean Code Principles</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="sobre-mi" class="section">
-        <div class="container about-container">
-            <div class="about-text">
-                <h2 class="section-title">Sobre mí</h2>
-                <p>
-                    Soy un desarrollador apasionado por transformar ideas complejas en software utilizable. 
-                    Actualmente estoy enfocado en el ecosistema móvil con <strong>Flutter</strong>.
-                </p>
-                <p>
-                    Mi enfoque no es solo escribir código, sino entender el "por qué" detrás de cada funcionalidad. 
-                    En mi proyecto reciente, <em>MoneyMove</em>, me enfrenté a desafíos de seguridad y gestión de estado 
-                    que resolví implementando buenas prácticas de arquitectura.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contacto" class="section footer-cta">
+    <section id="contact" class="section cta-section">
         <div class="container">
-            <h2>¿Listo para trabajar juntos?</h2>
-            <p>Estoy disponible para oportunidades laborales o proyectos freelance.</p>
-            <a href="mailto:tuemail@ejemplo.com" class="btn-primary">Envíame un correo</a>
-            
-            <div class="social-links">
-                <a href="https://github.com/Visac95" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/tu-usuario" target="_blank">LinkedIn</a>
+            <div class="cta-box">
+                <h2>Open to opportunities</h2>
+                <p>
+                    I am currently seeking a junior full-time position, preferably remote, 
+                    where I can continue growing as a developer and contribute to real-world products.
+                </p>
+                <a href="mailto:visacstudios@gmail.com" class="btn-white">Get in Touch</a>
+                
+                <div class="footer-links">
+                    <a href="https://github.com/Visac95" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/samuel-ararat-castro-4836193b1" target="_blank">LinkedIn</a>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Tu Nombre. Construido con HTML, CSS y café.</p>
-        </div>
+        <p>&copy; 2026 Samuel Ararat. Built with focus and discipline.</p>
     </footer>
 
 </body>
